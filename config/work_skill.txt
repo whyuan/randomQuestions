@@ -1,4 +1,3 @@
-var questions_ori = `
 validator&coder
 数据库登记已启动的服务器
 xml读取
@@ -14,5 +13,3 @@ extension service dao 三层常用模式
 注解的使用
 logger使用
 定时器使用
-`
-var questions = questions_ori.split("\n").slice(1,-1);

@@ -9,19 +9,38 @@
     <meta name="screen-orientation" content="portrait"/>
     <meta name="x5-fullscreen" content="true"/>
     <meta name="360-fullscreen" content="true"/>
-	<title>many question</title>
+	<title>random question</title>
 	
 	<!-- Standardised web app manifest -->
-	<link rel="manifest" href="app.manifest" />
+	<!-- <link rel="manifest" href="app.manifest" /> -->
 	
 	<!-- Chrome for Android web app tags -->
 	<meta name="mobile-web-app-capable" content="yes" />
 	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
 </head> 
  
-<body style="min-height: 100%; display: flex; justify-content: center; align-items: center; margin: 0; font-size: 1.5rem; background: #fffddd;"> 
-	<div id="question" style="margin: auto 1rem; text-align: center;">abcdd</div>
-	<script type="text/javascript" src="config/questions.js"></script>
+<!-- <body style="min-height: 100%; display: flex; justify-content: center; align-items: center; margin: 0; font-size: 1.2rem; background: #fffddd;">  -->
+	<!-- <div id="question" style="margin: auto 1rem; text-align: center;">abcdd</div> -->
+<!-- </body> -->
+<body style="margin: 10px; font-size: 1.2rem; background: #fffddd;"> 
+	<div>
+		<p>我们通常希望：任给一个性质，满足该性质的所有集合總可以组成一个集合。但这样的企图将导致悖论：</p>
+		<p>罗素悖论：设命题函数P(x)表示“x∉x”，现假设由性质P确定一个集合A——也就是说“A={x|x ∉ x}”。那么现在的问题是：A∈A是否成立？首先，若A∈A，则A是A的元素，那么A不具有性质P，由命题函数P知A∉A；其次，若A∉A，也就是说A具有性质P，而A是由所有具有性质P的类组成的，所以A∈A。</p>
+	</div>
+	<div id="question"></div>
+	<div>
+		<p>A∈A。</p>
+		<p>罗素悖论还有一些更为通俗的描述，如理发师悖论、书目悖论。</p>
+		<p>罗素悖论在类的理论中通过内涵公理而得到解决。</p>
+		<p>理发师悖论和罗素悖论是等价的：</p>
+		<p>因为，如果把每个人看成一个集合，这个集合的元素被定义成这个人刮脸的对象。那么，理发师宣称，他的元素，都是城里不属于自身的那些集合，并且城里所有不属于自身的集合都属于他。那么他是否属于他自己？这样就由理发师悖论得到罗素悖论。反过来的变换也是成立的。</p>
+	</div>
+	<div id="navigation"></div>
+	<div>
+		<p>另一種等價的悖論為書目悖論，第一類的書的目錄有它自己的條目，經典的例子就是維基百科，第二類的書目錄則沒有它自己的條目，一般的書目都是如此，問：若把所有第二類的書做個總目錄，它應不應該含有它自己的條目？</p>
+	</div>
+	<script type="text/javascript" src="config/types.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
- </body> 
+</body> 
 </html> 
