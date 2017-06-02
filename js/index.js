@@ -19,7 +19,6 @@ var jumpTo = function(index) {
 		updateData(cache[aType.link]);
 	} else {
 		$.get("config/"+aType.link, function(data) {
-			alert(data);
 			cache[aType.link] = data;
 			updateData(data);
 		});

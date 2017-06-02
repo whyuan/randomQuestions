@@ -1,0 +1,167 @@
+$man command
+$info command
+$whatis command
+$which command
+$whereis command
+$finger username
+$who
+$who am I
+$su
+$sudo command
+$passwd
+$history
+$alias
+$env
+$expr 1 + 1
+$du -sh dir
+$find . -name filename
+$locate string
+$ln -s filename path
+$pwd
+$cd path
+$cd -
+$cd ~
+$touch filename
+$rm filename
+$cp file1 file2
+$ls -l path
+$mkdir dir
+$mkdir -p path
+$rmdir dir
+$rm -r dir
+$file filename
+$chown username:groupname filename
+$chgrp group filelist
+$chmod 755 filename
+$chmod o+wx,u-x,g=rx testfile
+$od -c filename
+$cat filename
+$head -1 filename
+$tail -5 filename
+$diff file1 file2
+$sort filename
+$sort -f filename
+$sort -u filename
+$uniq filename
+$wc filename
+$wc -l filename
+$echo string
+$echo string | cut -c5-7
+$echo string | grep regex
+$echo string | grep -o regex
+$echo "OK!\c"
+$date
+$date +"%Y-%m-%d_%T"
+$date --date="1999-01-03 05:30:00" 100 days
+$sleep 300 
+$top
+$ps -aux
+$ps -ef
+$kill PID
+$kill %job
+$lsof -u username
+$dmesg
+$time a.out
+$cat /proc/version
+$uname -a
+$cat /etc/redhat-release
+$cat /etc/issue
+$df -lh
+$mount
+$mount -t iso9660 /dev/cdrom /mnt/cdrom
+$umount partition
+$sudo fdisk -l 	###  $sudo fdisk device
+$sudo mkfs -t ext3 partition
+$arch
+$cat /proc/cpuinfo
+$cat /proc/meminfo
+$free
+$ifconfig
+$ifup eth0
+$ifdown eth0
+$iwconfig
+$route
+$netstat
+$ping IP
+$traceroute IP
+$dhclient
+$host domain
+$host IP
+$wget url
+$ssh ID@host
+$sftp ID@host  ### get filename / put filename / ls / cd / lls / lcd
+$scp localpath ID@host:path
+$scp -r ID@site:path localpath
+$zip file.zip file1 file2
+$unzip file.zip
+$gzip -c filename > file.gz
+$gunzip file.gz
+$tar -cf file.tar file1 file2
+$tar -zcvf file.tar file1 file2
+$tar -xf file.tar
+$tar -zxf file.tar.gz
+$service
+$chkconfig
+$export
+$pr option(s) filename(s)
+$mail [-s subject] [-c cc-addr] [-b bcc-addr] to-addr
+$pg
+$more
+$jobs -l
+$fg %jobnumber
+$bg %jobnumber
+$ftp hostname or ip-address
+$telnet
+$stat demo.txt
+$useradd
+$usermod
+$userdel
+$groupadd
+$groupmod
+$groupdel
+$vmstat
+$ping 192.168.0.1 | logger -it logger_test -p local3.notice&
+$trap "rm -f $WORKDIR/work1$$ $WORKDIR/dataout$$; exit" 2
+$kill -9 1001
+$read PERSON
+$readonly myUrl
+$unset variable_name
+$printf "%s %s %s\n" a b c d e f g h i j
+$unset .f function_name
+$command > /dev/null 2>&1
+$command << delimiter document delimiter
+
+
+用户管理(suid, sgid)
+/etc/profile作用
+PS1, PS2变量作用
+命令末尾加&作用
+vim  :s/search/replace/g
+目录结构(/, /bin, /dev, /etc, /lib, /boot, /home, /mnt, /proc, /tmp, /usr, /var, /sbin)
+目录项, inode表, 数据块关系
+硬链接, 软链接
+/etc/passwd, /etc/shadow, /etc/group作用
+什么是用户态CPU, 内核态CPU
+/var/log作用
+信号机制理解
+工作目录属于shell的状态,shell属于特殊的在运行的进程
+特殊变量$0 $n $# $* $@ $? $$
+${var} ${var:-word} ${var:=word} ${var:?message} ${var:+word}
+if关系运算 -eq -ne -gt -lt -ge -le
+if布尔运算 ! -o -a
+if字符串运算 == != -z -n str
+if文件测试运算 -b -c -d -f -g -k -p -u -r -w -x -s -e
+${#string} ### ${string:1:4}
+array_name=(value0 value1 value2 value3) ### length=${#array_name[@]}
+echo `date`
+if then elif then else fi
+$[2*3]
+case 值 in 模式1) command1 ;; 模式2) command1 ;; *) command1 ;; esac
+for 变量 in 列表 do command1 done
+while command do command1 done
+until command do command1 done
+break n
+continue n
+function function_name () { list of commands [ return value ] }
+stdin(0) stdout(1) stderr(2)  $command >> file 2>&1
+source filename  ###  . filename

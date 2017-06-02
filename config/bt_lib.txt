@@ -1,0 +1,10 @@
+com.bt.game:btgame-common
+com.bt.game:btgame-cache
+com.bt.game:btgame-server
+com.bt.game:btgame-evt
+com.baitian:mobile_common
+com.baitian:baitian-common
+com.baitian:rpc
+com.baitian:routerif
+com.baitian.pjh5:xmlparser
+com.bt.tech:wordfilter
